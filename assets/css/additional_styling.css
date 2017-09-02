@@ -1,13 +1,8 @@
-
-
-/* Sticky footer styles
--------------------------------------------------- */
 html {
     position: relative;
     min-height: 100%;
 }
 body {
-    /* Margin bottom by footer height */
     margin-bottom: 60px;
     background-image: url('../images/crossword.png');
 }
@@ -15,42 +10,44 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    /* Set the fixed height of the footer here */
     height: 60px;
     background-color: #f5f5f5;
 }
 
-
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
-
 .container .text-muted {
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .gap-right {
-    margin-right: 10px;
+    padding-right: 15px;
 }
 
 .gap-left {
-    margin-left: 10px;
+    margin-left: 15px;
+}
+
+.gap-right{
+    margin-right: 15px;
 }
 
 .gap-top {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 .gap-bottom {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .padding-top {
-    padding-top:10px;
+    padding-top:15px;
+}
+
+.padding-LR{
+    padding: 0 15px 0;
 }
 
 .padding-bottom{
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .main {
@@ -73,7 +70,6 @@ body {
     opacity: 0.5;
 }
 
-
 .vertical-center {
     display: flex;
     align-items: center;
@@ -89,19 +85,15 @@ body {
     border: none;
 }
 
-.icon-style {
-    width: 64px;
-    height: 64px;
-}
-
 .icon-style:hover {
     text-decoration: none;
+    opacity: .5;
 }
 
 .caption {
-    width:99.25%;
+    width:100%;
     bottom: 80px;
-    left:1px;
+    left:0px;
     padding: 10px 0 10px 0;
     position: relative;
     background:#716AFF;
@@ -110,7 +102,6 @@ body {
 .caption h4 {
     color: #fff;
     text-align: center;
-    xz-index: 100;
 }
 
 .add-border {
@@ -118,31 +109,10 @@ body {
     text-align: center;
 }
 
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
-
 .al-center {
-    xalign-items: center;
-
     display: inline-flex;
     vertical-align: middle !important;
-    xtext-align: center;
 }
-
-.picheight {
-    height: 200px;
-    width: 100%;
-    xborder: 1px solid black
-}
-
-.div-img {
-    max-height: 100%;
-}
-
 
 .message {
     resize: none;
@@ -152,4 +122,12 @@ body {
     border-color: #716AFF;
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(113, 106, 255, .6);
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(113, 106, 255, .6);
+}
+
+.no-whitespace {
+    white-space: nowrap;
+}
+
+.nav>li {
+    display: inline-block;
 }
